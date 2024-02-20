@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+html, body {
+  font-family: Helvetica;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /* background-image: linear-gradient(to right, #e0e0e0, #7f7f7f); */
+  background-color: #F0F0F0;
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff9;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+button i {
+  color: #fff9;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+input, select {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.hide {
+  display: none !important;
+}
+
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 16px 16px;
+  border-bottom: 1px solid #333;
+}
+
+#todo-form, #edit-form {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+#todo-form p, #edit-form p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#cancel-edit-btn:hover {
+  background-color: #BA4E49;
+}
+
+#toolbar {
+  padding: 16px;
+  border-bottom: 1px solid #333;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 8px;
+}
+
+#search {
+  border-right: 1px solid #333;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+#search form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+select {
+  cursor: pointer;
+}
+
+.todo button{
+  padding: 5px 10px;
+  font-size: 10px;
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 450px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.todo::-webkit-scrollbar {
+  width: 8px;
+}
+
+.todo::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+.todo-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #333;
+}
+
+.todo-items h3, .todo-items button {
+  margin: 8px 8px 8px 0;
+}
+
+.todo-items h3 {
+  flex: 1;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.done {
+  background-color: #3F7554;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+  
+}
